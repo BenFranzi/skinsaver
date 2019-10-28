@@ -1,0 +1,21 @@
+version: "3.5"
+
+services:
+  database:
+    container_name: postgres
+    image: postgres:latest
+    restart: always
+    ports:
+      - "5432:5432"
+    volumes:
+      - "./volumes/postgres:/var/lib/postgresql/data"
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: skinsaver
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080

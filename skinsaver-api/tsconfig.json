@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "rootDirs": [
+      "./src"
+    ],
+    "module": "commonjs",
+    "declaration": false,
+    "noImplicitAny": false,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es6",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "noLib": false,
+    "outDir": "./dist",
+    "moduleResolution": "node",
+    "types": [
+      "node"
+    ],
+    "lib": [
+      "es6",
+      "es2015",
+      "es2017",
+      "esnext",
+      "dom",
+      "es2015.reflect",
+      "esnext.asynciterable"
+    ]
+  },
+  "include": [
+    "src/**/*",
+    "test/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
